@@ -65,7 +65,7 @@ def display_results():
 # GUI Setup
 root = tk.Tk()
 root.title("Memory Game")
-root.geometry("600x700")
+root.geometry("600x900")
 root.configure(bg="#f0f0f0")
 
 frame = tk.Frame(root, bg="#ffffff", padx=20, pady=20, relief="solid", borderwidth=2)
