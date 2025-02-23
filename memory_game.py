@@ -1,11 +1,11 @@
 import tkinter as tk
 import random
-import pymongo
+#import pymongo
 
 # MongoDB connection
-client = pymongo.MongoClient("mongodb://localhost:27017/")
+"""client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = client["memory_game_db"]
-collection = db["game_results"]
+collection = db["game_results"]"""
 
 # Global variables
 sequence = []
@@ -39,7 +39,7 @@ def check_answer():
         "user_attempt": " ".join(user_answer),
         "correct": is_correct
     }
-    collection.insert_one(game_result)
+    #collection.insert_one(game_result)
 
     if is_correct:
         result_label.config(text="Correct!", fg="green")
